@@ -46,6 +46,25 @@ console.log(Lion.eat());
 // Principle 3
 
 // code example for New Binding
+function slayMonster(fire) {
+
+    this.critHit = 'Critical Strike';
+   this.fire = fire;
+   this.announce = function() {
+
+        console.log(this.critHit + this.fire);
+       console.log(this);
+   };
+
+}
+
+const Dragon = new slayMonster('Dragon');
+
+Dragon.fire();
+
+
+
+
 
 // Principle 4
 

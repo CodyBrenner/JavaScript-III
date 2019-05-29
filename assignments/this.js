@@ -1,10 +1,10 @@
 /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
-* 1. 
-* 2. 
-* 3. 
-* 4. 
+* 1.  window uses global
+* 2.    Implicit references the function before
+* 3.    New binding refrences newly created
+* 4.    call and apply on this
 *
 * write out a code example of each explanation above
 */

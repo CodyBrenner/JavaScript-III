@@ -34,10 +34,10 @@ const Zebra = {
 const Lion = {
     name: "Mufasa",
     age: 40,
-    food: "Zebras",
+    food: "Zebra",
     eat: function(){
         'strict use';
-        return `${this.name} eats animals like ${Zebra.name}`;
+        return `${this.name} eats animals like the ${this.food}. ${this.name} is ${this.age} Years Old! I Hope ${Zebra.name} survives!`;
     }
 
 }
@@ -50,3 +50,15 @@ console.log(Lion.eat());
 // Principle 4
 
 // code example for Explicit Binding
+
+
+const obj = {
+    "name": "Techcon",
+    
+}
+function explicit(name, speaker1, speaker2, speaker3){
+    return `Hello, welcome to the Convention ${name} where we talk all things Tech. The Speakers are ${speaker1}, ${speaker2}, ${speaker3}`
+}
+
+const speakers = ["Techcon" ,"Amazon", "Microsoft", "Apple"]
+console.log(explicit.call(obj, ...speakers ));
